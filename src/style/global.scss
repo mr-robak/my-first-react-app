@@ -1,0 +1,4 @@
+// src/style/global.scss
+// import Bootstrap, but not before importing our customizations.
+@import "./config";
+@import "~bootstrap";

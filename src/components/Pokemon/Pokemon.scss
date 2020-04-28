@@ -1,0 +1,22 @@
+// src/components/Pokemon/Pokemon.scss
+
+.Pokemon {
+  transition: transform 0.2s ease;
+}
+
+/* Scale up the box */
+.Pokemon:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.Pokemon:hover::after {
+  opacity: 1;
+}
+.Pokemon:hover {
+  //   transform: scale(1.02) translate(0, -3px);
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out 0.1s;
+}
