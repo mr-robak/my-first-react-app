@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./style/global.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+
+import "./style/global.scss";
 
 ReactDOM.render(
   <React.StrictMode>
