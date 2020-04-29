@@ -3,6 +3,10 @@ import "./App.css";
 
 import Title from "./components/Title";
 import Pokemon from "./components/Pokemon/Pokemon";
+import LikeCounter from "./components/LikeCounter";
+import LikeButton from "./components/LikeButton";
+import AwesomeAnimals from "./components/AwesomeAnimals";
+import ArticleList from "./components/ArticleList";
 
 const all_pokemon = [
   {
@@ -40,6 +44,10 @@ function App() {
   return (
     <main className="container">
       <Title content="Welcome my Pokemons!" />
+      <ArticleList />
+      <LikeCounter />
+      <LikeButton />
+      <AwesomeAnimals />
       <div className="row">
         {all_pokemon.map((pokemon) => (
           <div className="col-md-6 col-lg-4">
